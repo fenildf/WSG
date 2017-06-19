@@ -7,6 +7,5 @@ document.onkeydown = function (e) {
         key = String.fromCharCode(e.which);
     }
     if (key === 'W') {
-        alert(222);
     }
 };

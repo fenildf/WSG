@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a21cbd2-2a0f-40e8-9d59-1c4d0e68a398" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/game.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/acey/websocket/controller/GroupController.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/acey/websocket/util/Contant.class" afterPath="$PROJECT_DIR$/target/classes/org/acey/websocket/util/Contant.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/websocketDemo/WEB-INF/classes/org/acey/websocket/controller/GroupController.class" afterPath="$PROJECT_DIR$/target/websocketDemo/WEB-INF/classes/org/acey/websocket/controller/GroupController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/websocketDemo/WEB-INF/classes/org/acey/websocket/util/Contant.class" afterPath="$PROJECT_DIR$/target/websocketDemo/WEB-INF/classes/org/acey/websocket/util/Contant.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/acey/websocket/controller/GroupController.java" afterPath="$PROJECT_DIR$/src/main/java/org/acey/websocket/controller/GroupController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/acey/websocket/util/Contant.java" afterPath="$PROJECT_DIR$/src/main/java/org/acey/websocket/util/Contant.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/game.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/game.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/group.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/group.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/operation.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/operation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/socket.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/socket.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/websocketDemo/WEB-INF/views/game.jsp" afterPath="$PROJECT_DIR$/target/websocketDemo/WEB-INF/views/game.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/websocketDemo/WEB-INF/views/group.jsp" afterPath="$PROJECT_DIR$/target/websocketDemo/WEB-INF/views/group.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/websocketDemo/resources/operation.js" afterPath="$PROJECT_DIR$/target/websocketDemo/resources/operation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/websocketDemo/resources/socket.js" afterPath="$PROJECT_DIR$/target/websocketDemo/resources/socket.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/websocketDemo/resources/game.js" afterPath="$PROJECT_DIR$/target/websocketDemo/resources/game.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -164,8 +150,8 @@
       <file leaf-file-name="game.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/game.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="225">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1204,7 +1190,7 @@
       <workItem from="1497688672992" duration="33493000" />
       <workItem from="1497784307939" duration="1882000" />
       <workItem from="1497837126403" duration="4466000" />
-      <workItem from="1497841966890" duration="14808000" />
+      <workItem from="1497841966890" duration="14838000" />
     </task>
     <servers />
   </component>
@@ -1223,7 +1209,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54649000" />
+    <option name="totallyTimeSpent" value="54679000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1236,7 +1222,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-11" width="1368" height="780" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1262,7 +1247,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.58641976" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32817337" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32817337" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32817337" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25378788" sideWeight="0.49382716" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5182292" order="2" side_tool="true" content_ui="tabs" />
@@ -1743,8 +1728,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/game.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="225">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
