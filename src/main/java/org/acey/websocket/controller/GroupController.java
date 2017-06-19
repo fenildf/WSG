@@ -1,8 +1,6 @@
 package org.acey.websocket.controller;
 
-import com.google.gson.Gson;
 import org.acey.websocket.entity.Group;
-import org.acey.websocket.entity.GroupMessage;
 import org.acey.websocket.entity.Message;
 import org.acey.websocket.entity.User;
 import org.acey.websocket.service.IGroupService;
@@ -12,7 +10,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.socket.TextMessage;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -34,6 +31,7 @@ public class GroupController {
         User user = new User(UUID.randomUUID().toString().replace('-', '\0'), name, "", null);
         request.getSession().setAttribute("user", user);
         request.getSession().setAttribute("groups", MyWebSocketHandler.GROUP);
+
         return new ModelAndView("iframe");
     }
 
@@ -42,6 +40,13 @@ public class GroupController {
         return new ModelAndView("group");
     }
 
+    @RequestMapping(value = "startGame")
+    public ModelAndView startGame(HttpSession session) {
+        User user = (User) session.getAttribute("user");
+        session.setAttribute("group", MyWebSocketHandler.GROUP.get(user.getGroupId()));
+
+        return new ModelAndView("game");
+    }
 
     @RequestMapping("createGroup")
     public String createGroup(HttpSession session) {
@@ -69,7 +74,7 @@ public class GroupController {
             String groupId = groupService.delete(user);
 
             Message<String> message = new Message<String>(Contant.OPER_DELETE, groupId);
-            handler.sendGroupMember(message,user);
+            handler.sendGroupMember(message, user);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -77,16 +82,21 @@ public class GroupController {
         return "group";
     }
 
-    @RequestMapping("addGroup")
+    @RequestMapping("joinGroup")
     public String addGroup(final HttpSession session, String id) {
-        User user = (User) session.getAttribute("user");
-        user.setGroupId(id);
-        MyWebSocketHandler.GROUP.get(id).setLastUser(user);
-        session.setAttribute("groups", MyWebSocketHandler.GROUP);
-        final GroupMessage sendMessage = new GroupMessage("add", id, (User) session.getAttribute("user"));
-        final String userId = ((User) session.getAttribute("user")).getId();
-        Group group1 = MyWebSocketHandler.GROUP.get(id);
-        return "redirect:group";
+        try {
+            User user = (User) session.getAttribute("user");
+            user.setGroupId(id);
+            MyWebSocketHandler.GROUP.get(id).setLastUser(user);
+            session.setAttribute("group", MyWebSocketHandler.GROUP.get(id));
+
+            Message<String> message = new Message<String>(Contant.OPER_JOIN, "");
+            handler.sendGroupMember(message, user);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return "game";
     }
 
 

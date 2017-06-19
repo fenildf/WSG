@@ -23,7 +23,7 @@ websocket.onmessage = function (event) {
 
     if (data.operation === "delete") groupFrame.window.deleteGroup(data.data);
 
-    if (data.operation === "add");
+    if (data.operation === "join") groupFrame.window.joinGroup();
 
     if (data.operation === "update");
 
@@ -38,4 +38,10 @@ websocket.onerror = function (event) {
 websocket.onclose = function (event) {
     console.log("WebSocket:已关闭");
     console.log(event);
+}
+
+
+
+function getSocket() {
+    return websocket
 }

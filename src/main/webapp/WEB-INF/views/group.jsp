@@ -7,7 +7,6 @@
     <title>create or join in</title>
 
 </head>
-<body>
 <style>
     * {
         list-style: none;
@@ -23,6 +22,8 @@
         margin-left: 20px;
     }
 </style>
+<body>
+
 <div style="width: 80%;height: 80%;border: 1px solid red;">
     <h2>
         hello ${user.name} ,you id is "${user.id}"
@@ -44,7 +45,7 @@
                                        style="font-size: 12px;color: darkolivegreen">解散分组</a>
                                 </c:when>
                                 <c:otherwise>
-                                    <a href="/msg/addGroup?id=${group.key}" style="font-size: 12px;color: red">加入分组</a>
+                                    <a href="/msg/joinGroup?id=${group.key}" style="font-size: 12px;color: red">加入分组</a>
                                 </c:otherwise>
                             </c:choose>
                         </p>
@@ -61,42 +62,6 @@
         </div>
     </div>
 </div>
-
-
-<script>
-    let distance = 0;
-    function send() {
-        ++distance;
-        let topDistance = parseInt($(".word").css("top"));
-        $(".word").css({top: (--topDistance) + "px"});
-        websocket.send(JSON.stringify({top: topDistance + 2 * distance}));
-
-    }
-    document.onkeydown = function (e) {
-        var isie = (document.all) ? true : false;
-        var key;
-        if (isie) {
-            key = window.event.keyCode;
-        } else {
-            key = e.which;
-        }
-        if (key == 37) {
-            alert('left');
-        }
-        if (key == 38) {
-//            send();
-            setInterval("send()", 100);
-        }
-        if (key == 39) {
-            alert('right');
-        }
-        if (key == 40) {
-            alert('down');
-        }
-    };
-</script>
-
-
 </body>
 
 </html>

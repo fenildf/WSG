@@ -1,8 +1,10 @@
+let webSocket;
+
 function createGroup(data) {
     let innerHtml = `
     <div class='groupStyle groupId${data.groupId}'>
                         <p>groupName："test"
-                                    <a href='/msg/addGroup?id=${data.groupId}'  style='font-size: 12px;color: red'>加入分组</a>
+                                    <a href='/msg/joinGroup?id=${data.groupId}'  style='font-size: 12px;color: red'>加入分组</a>
                         </p>
                         <hr/>
                         groupNumber:
@@ -16,4 +18,8 @@ function createGroup(data) {
 
 function deleteGroup(data) {
     $(".groupId" + data).remove();
+}
+
+function joinGroup() {
+    location.href = "/msg/startGame"
 }
