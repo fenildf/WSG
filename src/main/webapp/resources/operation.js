@@ -1,5 +1,3 @@
-let webSocket;
-
 function createGroup(data) {
     let innerHtml = `
     <div class='groupStyle groupId${data.groupId}'>

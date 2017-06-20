@@ -8,6 +8,8 @@
     <title>Title</title>
 </head>
 <body>
-<iframe name="groupFrame" src="${pageContext.request.contextPath}/msg/group" width="80%" height="80%"></iframe>
+<iframe name="groupFrame" src="${pageContext.request.contextPath}/msg/group" frameborder="no" marginheight="0"
+        marginwidth="0"
+        scrolling="no" width="100%" height="100%"></iframe>
 </body>
 </html>

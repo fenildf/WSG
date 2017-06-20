@@ -19,8 +19,6 @@ import java.util.UUID;
 @Controller
 @RequestMapping("/msg")
 public class GroupController {
-
-    private Message message;
     @Resource
     private MyWebSocketHandler handler;
     @Resource
