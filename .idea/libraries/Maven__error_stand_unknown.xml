@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: error:stand:unknown">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/error/stand/unknown/stand-unknown.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/error/stand/unknown/stand-unknown-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/error/stand/unknown/stand-unknown-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
